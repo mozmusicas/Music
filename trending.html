@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Trending — CYBER MUSIC</title> <meta name="description" content="Tendências musicais com base em charts e circulação pública verificável."> <link rel="stylesheet" href="css/style.css"> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
+<style id="cyber-critical">
+:root{--bg-deep:#050508;--bg-card:#0c0c12;--bg-elevated:#12121a;--border:#1e1e2a;--cyan:#00e5ff;--electric:#2979ff;--purple:#7c4dff;--text-primary:#f0f4f8;--text-secondary:#a0aec0;--text-muted:#718096;--font-display:'Orbitron',system-ui,sans-serif;--font-body:'Inter',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#050508!important;color:#f0f4f8!important;font-family:Inter,system-ui,sans-serif;line-height:1.6;min-height:100vh}
+a{color:#00e5ff;text-decoration:none}
+a:hover{color:#fff}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(5,5,8,.92);backdrop-filter:blur(12px);border-bottom:1px solid #1e1e2a}
+.header-inner{max-width:1120px;margin:0 auto;padding:.85rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.logo{font-family:Orbitron,system-ui,sans-serif;font-weight:700;letter-spacing:.06em;color:#00e5ff;font-size:1.05rem;display:flex;align-items:center;gap:.4rem}
+.nav-main{display:flex;flex-wrap:wrap;gap:.65rem 1rem}
+.nav-main a{color:#a0aec0;font-size:.85rem;font-weight:500}
+.nav-main a:hover,.nav-main a.active{color:#00e5ff}
+.cyber-ticker{overflow:hidden;background:#0a0a10;border-bottom:1px solid #1e1e2a;font-size:.72rem;letter-spacing:.08em;color:#00e5ff;padding:.45rem 0;white-space:nowrap}
+.ticker-track{display:inline-block;animation:ticker 40s linear infinite}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.main-content,.section,.container{max-width:1120px;margin:0 auto;padding:1.25rem}
+.section-title{font-family:Orbitron,system-ui,sans-serif;font-size:1.35rem;margin:1.5rem 0 1rem;color:#f0f4f8;display:flex;align-items:center;gap:.5rem}
+.card,.chart-row{background:#0c0c12;border:1px solid #1e1e2a;border-radius:10px;padding:1rem;margin-bottom:.75rem}
+.chart-row{display:grid;grid-template-columns:40px 1fr auto;gap:.75rem;align-items:center}
+.btn-primary,.btn-outline,button{cursor:pointer}
+.btn-primary{background:linear-gradient(135deg,#00e5ff,#2979ff);color:#000;border:0;padding:.55rem 1rem;border-radius:8px;font-weight:600}
+.site-footer{margin-top:3rem;border-top:1px solid #1e1e2a;padding:2rem 1.25rem;background:#08080e;color:#a0aec0;font-size:.85rem}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem}
+img{max-width:100%;height:auto;display:block;border-radius:8px}
+input,select{background:#12121a;border:1px solid #1e1e2a;color:#f0f4f8;padding:.5rem .75rem;border-radius:8px}
+@media(max-width:700px){.nav-main{width:100%}.header-inner{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body> <header class="site-header"> <div class="header-inner"> <a href="index.html" class="logo"><span class="logo-icon">▶</span> CYBER MUSIC</a> <nav class="nav-main"> <a href="index.html">Home</a> <a href="charts.html">Charts</a> <a href="trending.html" class="active">Trending</a> <a href="mozambique.html">Moçambique</a> <a href="about.html">About</a> </nav> </div> </header> <div class="cyber-ticker" aria-hidden="true"> <div class="ticker-track"> <span class="ticker-item"><span class="dot"></span> TRENDING NOW</span> <span class="ticker-item"><span class="dot"></span> BASED ON PUBLIC CHARTS &amp; CIRCULATION</span> <span class="ticker-item"><span class="dot"></span> TRENDING NOW</span> </div> </div> <main class="main-content"> <section class="section container"> <h1 class="section-title">Trending Now</h1> <p style="color:var(--text-muted);margin-bottom:1.5rem;">Indicadores baseados em dados públicos de charts e circulação (setembro 2026). Não inventamos tendências.</p> <div class="mz-highlight"> <h2 style="font-size:1.1rem;margin-bottom:0.5rem;">🔥 Hot 100 momentum</h2> <p style="color:var(--text-secondary);">Ella Langley – “Choosin’ Texas” continues to dominate the Billboard Hot 100 (21 weeks at No. 1 as of 12 Sep 2026). Country titles occupy multiple upper positions.</p> </div> <div class="cards-grid" style="margin-top:1.5rem;"> <article class="card"> <div class="card-body"> <div class="card-category">Global / USA</div> <h3 class="card-title">Country on the all-genre chart</h3> <p style="color:var(--text-secondary);font-size:0.9rem;">Strong presence of country and country-leaning tracks in the Billboard Hot 100 top 10 in September 2026.</p> </div> </article> <article class="card"> <div class="card-body"> <div class="card-category">Africa</div> <h3 class="card-title">Amapiano circulation</h3> <p style="color:var(--text-secondary);font-size:0.9rem;">Sam Deep, Kabza De Small and related tracks maintain high visibility on African playlists and local charts.</p> </div> </article> <article class="card"> <div class="card-body"> <div class="card-category">Moçambique</div> <h3 class="card-title">Local + regional sounds</h3> <p style="color:var(--text-secondary);font-size:0.9rem;">Apple Music Mozambique references show mix of local artists, Amapiano and regional collaborations in September 2026.</p> </div> </article> </div> </section> </main> <footer class="site-footer"><div class="container"><div class="footer-bottom"><span>© 2026 Cyber Music</span><a href="index.html">Home</a></div></div></footer> <script src="js/app.js" defer></script> <script src="js/player.js" defer></script>
+</body>
+</html>
